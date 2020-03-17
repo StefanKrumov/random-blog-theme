@@ -1,0 +1,69 @@
+.site-header {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 22em;
+  height: 100%;
+  background-image: url("https://images.pexels.com/photos/673857/pexels-photo-673857.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(250, 250, 250);
+}
+.site-header:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: rgba(252, 252, 252, 0.15);
+}
+.header-content {
+  position: absolute;
+  margin: 0 auto;
+  bottom: 0;
+  z-index: 1;
+}
+.header-content ul {
+  padding-top: 1.8em;
+}
+.header-content ul li {
+  list-style: none outside;
+  padding: 0.2em;
+}
+.header-content p,
+.header-content ul li a {
+  color: rgba(255, 255, 255, 0.781);
+  transition: color 0.2s ease-in;
+}
+.header-content ul li a:hover {
+  color: white;
+}
+
+.site-social ul {
+  display: flex;
+  padding-top: 1.8em;
+  padding-bottom: 3em;
+}
+.site-social li {
+  display: block;
+  padding: 0;
+}
+.site-social ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1em;
+  width: 2.5em;
+  height: 2.5em;
+  color: rgba(4, 0, 24, 0.788);
+  background-color: rgba(224, 224, 224, 0.801);
+  border-radius: 50%;
+  transition: background-color 0.3s ease-in;
+}
+.site-social ul li a:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgba(4, 0, 24, 0.788);
+}
